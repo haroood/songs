@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("**Your_eyes**",{type: 'WATCHING'})
+   client.user.setActivity("ضحكتك هناي",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -88,7 +88,7 @@ client.on('message', async msg => {
                     .setDescription(`**الرجآء إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
  
-                    .setFooter("By iiFireKingYTii_#7310")
+                    .setFooter("o b s c u r e")
                     msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
                    
                     // eslint-disable-next-line max-depth
@@ -229,7 +229,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "--";
+const adminprefix = "-o";
 const devs = ['196805254375800834'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
